@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARG_hotel</title>
+  <link rel="stylesheet" href="ARG.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="main-header">
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img id="logo" src="images/logo.jpg" alt="logo">
+          <p style="color: goldenrod;">ARG <span>Hotel</span></p>
+        </div>
+        <ul class="links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="rooms.html">ROOMS</a></li>
+          <li><a href="restaurant.html">RESTAURANT</a></li>
+          <li><a href="cafe.html">CAFE</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+          <a href="booking.html" class="action_btn">BOOK ROOM</a>
+        </ul>
+        <div class="menu-btn">
+          <div class="toggle-btn">
+            <i class="soild"><img id="menu-icon" src="images/toggle-btn.jpg" alt="menu"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="dropdown-menu">
+        <li><a class="dropDownMenu" href="index.html">HOME</a></li>
+        <li><a class="dropDownMenu" href="services.html">SERVICES</a></li>
+        <li><a class="dropDownMenu" href="rooms.html">ROOMS</a></li>
+        <li><a class="dropDownMenu" href="restaurant.html">RESTAURANT</a></li>
+        <li><a class="dropDownMenu" href="cafe.html">CAFE</a></li>
+        <li><a class="dropDownMenu" href="contact.html">CONTACT US</a></li>
+        <a href="booking.html" class="action_btn">BOOK ROOM</a>
+      </div>
+    </header>
+  </header>
+  <div class="slideshow-container">
+    <div class="mySlides fade top">
+      <img src="images/slide1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade top">
+      <img src="images/slide5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade top">
+      <img src="images/pic5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade top">
+      <img src="images/slide3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade top">
+      <img src="images/slide4.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+  </div>
+
+  <script>
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slideIndex += 1;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    };
+    let slideIndex = 1;
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    showSlides(slideIndex);
+  </script>
+  
+  <div class="welcome">
+    <img id="ARG" src="images/ARG.jpg" alt="ARG">
+    <div id="welcome">
+      <b>
+        <h1>Welcome to<span style="color: goldenrod; font-weight: 1000; font-family: 'Times New Roman', Times, serif;">
+            ARG Hotel!</span></h1>
+      </b>
+      <p>
+        Our Accommodation type ranges from Sigle Room, Double Room, Suite and VIP, Each type having its own designated
+        style, decore, and amenities simple enough to make guests feel like home, Because each guest is different, have
+        individual preferences, and we have one of the best relations services in the Herat City.
+        At ARG Hotel, we take pride in good disign and environment, lifestyle in the arts and culture, economic and
+        social trends, exceptional customer service.
+        ARG name comes from anciet citadel in Herat, copital of Khorasan Empire.</p>
+      <b>
+        <h1>About Us</h1>
+      </b>
+      <strong style="font-weight: bolder;">The ARG Hotel</strong>
+      <p>ARG Hotel is a newly renovated business hotel in the heart of Herat City
+        -Blessed with premier central location, bustling city center, diverse international clientele for buseness men,
+        entrepreneurs, adventures, ARG Hotel is the preferred choice for busines and leisure travelers.
+        OUR Vision <br>
+        To be the first choice for guests, shareholders and business partners.
+        <br>
+        Our Mission <br>
+        To delightour guests every time bycreating engaging experiences straight from our heart.
+      </p>
+    </div>
+  </div>
+  </main>
+  <hr>
+  <footer>
+    <div class="footer">
+      <hr>
+      <br>
+      <hr>
+      <div class="social" style="display: flex; justify-content: center; align-items: center; text-align: center; ">
+        <b>follow us in social media:</b>
+        <a href="https://www.facebook.com/ArgHotel.af/?paipv=0&eav=AfbKOENRectGE4wiu3xOLooyx6mjp3C6wyFlMJ8z-87P4u2Lza6KfaT6z7o9sY48u9M&_rdr
+            " target="_blank"><img src="images/facebook.jpg" alt="facebook" height="26px"
+            style="border-radius: 18px;"></a>
+        <a href="https://www.instagram.com/arg_hotel_af/&ved=2ahUKEwiqxLnDuaeFAxX_m_0HHbUKB6gQFnoECBcQAQ&usg=AOvVaw0WBthhy5CIsw60gJ_8eLoU
+            " target="_blank"><img src="images/instagram.jpg" alt="instagram" height="26px"
+            style="border-radius: 18px;"></a>
+        <a href="https://twitter.com/hotel_arg?lang=en" target="_blank"><img src="images/tweter.jpg" alt="twitter"
+            height="26px" style="border-radius: 18px;"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
