@@ -25,13 +25,13 @@ form.addEventListener('submit', (e) => {
   if (name.value === '' || name.value === null) {
     e.preventDefault();
     name_error.innerHTML = "Name is required!";
-  }else {
+  } else {
     name_error.innerHTML = "";
   }
   if (!phoneNumber.value.match(phone_checker)) {
     e.preventDefault();
     phone_error.innerText = "Please enter a valid phone number!"
-  }else if (phoneNumber.value.length <= 9) {
+  } else if (phoneNumber.value.length <= 9) {
     e.preventDefault();
     phone_error.innerText = "Please enter a valid phone number!"
   } else {
@@ -40,7 +40,7 @@ form.addEventListener('submit', (e) => {
   if (!email.value.match(email_checker)) {
     e.preventDefault();
     email_error.innerText = "Please enter a valid email address!"
-  }else {
+  } else {
     email_error.innerText = ""
   }
 });
