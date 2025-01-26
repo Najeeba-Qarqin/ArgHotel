@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARG_hotel</title>
+    <link rel="stylesheet" href="ARG.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img id="logo" src="images/logo.jpg" alt="logo">
+                <p style="color: goldenrod; margin-top: 22px;">ARG <span>Hotel</span></p>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="rooms.html">ROOMS</a></li>
+                <li><a href="restaurant.html">RESTAURANT</a></li>
+                <li><a href="cafe.html">CAFE</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <a href="booking.html" class="action_btn">BOOK ROOM</a>
+            </ul>
+            <div class="menu-btn">
+                <div class="toggle-btn">
+                    <i class="soild"><img id="menu-icon" src="images/toggle-btn.jpg" alt="menu"></i>
+                    <i class="solid2"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="dropdown-menu">
+            <li><a class="dropDownMenu" href="index.html">HOME</a></li>
+            <li><a class="dropDownMenu" href="services.html">SERVICES</a></li>
+            <li><a class="dropDownMenu" href="rooms.html">ROOMS</a></li>
+            <li><a class="dropDownMenu" href="restaurant.html">RESTAURANT</a></li>
+            <li><a class="dropDownMenu" href="cafe.html">CAFE</a></li>
+            <li><a class="dropDownMenu" href="contact.html">CONTACT US</a></li>
+            <a href="booking.html" class="action_btn">BOOK ROOM</a>
+        </div>
+    </header>
+    <div class="book-container">
+        <div class="feildset">
+            <fieldset>
+                <legend>Booking Form:</legend>
+                <form action="" name="myform" class="myform" id="myform" method="get">
+                    <h2 id="title">Please fill the form with your information:</h2><br>
+                    <div class="input-control">
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" name="name" id="name" placeholder="Enter your full name:"><span id="required">*</span>
+                        <p id="name_error" class="error"></p><br>
+                    </div>
+                    <div class="input-control">
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number:"><span id="required">*</span>
+                        <p id="phone_error" class="error"></p><br>
+                    </div>
+                    <div class="input-control">
+                        <label for="email">Email:</label><br>
+                        <input type="text" name="email" id="email" placeholder="Enter your E-Mail address:"><span id="required">*</span>
+                        <p id="email_error" class="error"></p><br>
+                    </div>
+                    <strong><label for="select">Select a room :</label></strong>
+                    <br>
+                    <select name="rooms" id="rooms">
+                        <option value="Single Suite">...</option>
+                        <option value="Single Suite">Single Suite (1 Person) </option>
+                        <option value="Double Suite">Double Suite (2 Person)</option>
+                        <option value="2 BedRoom Apartment">2 BedRoom Apartment (2 Person)</option>
+                        <option value="2 BedRoom Apartment">2 BedRoom Apartment (3 Person)</option>
+                        <option value="2 BedRoom Apartment">2 BedRoom Apartment (4 Person)</option>
+                        <option value="VIP Apartment">VIP Apartment (4 Person)</option>
+                        <option value="Extra">Extra (1 Person)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+
+</html>
