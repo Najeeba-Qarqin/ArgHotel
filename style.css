@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.book-container {
+    position: static;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    height: 90vh;
+    background: url(images/1bedroom.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#title {
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+fieldset {
+    margin: 10px;
+    padding: 24px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.111);
+    backdrop-filter: blur(10px);
+}
+
+legend {
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 10px;
+    padding: 6px 20px;
+}
+
+.myform {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.myform label {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.myform input,
+select {
+    padding: 8px;
+    border-radius:8px;
+    border: 2px solid white;
+    width: 90%;
+    font-size: 12px;
+    transition: 0.5s ease-in-out;
+}
+
+.myform input:focus {
+    box-shadow: 0 0 10px white;
+}
+
+.myform input:hover,
+select:hover {
+    box-shadow: 0 0 10px white;
+}
+
+#required {
+    font-size: 20px;
+    color: red;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+}
+
+#submit {
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    background-color: goldenrod;
+    font-weight: 800;
+    transition: 0.6s ease;
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+}
+
+#submit:focus {
+    background-color: white;
+    border: 1.3px solid black;
+}
+
+#submit:hover {
+    background-color: white;
+    border: 1.3px solid black;
+}
+
+@media (max-width: 992px) {
+    .book-container {
+        height: 580px;
+    }
+
+    fieldset {
+        background-color: rgba(0, 0, 0, 0.444);
+        backdrop-filter: unset;
+    }
+}
+
+@media (max-width: 450px) {
+    .fieldset {
+        position: static;
+    }
+
+    .book-container {
+        height: 500px;
+    }
+
+    fieldset {
+        padding: 10px;
+        margin: 30px;
+        width: 80%;
+    }
+
+    #title {
+        font-size: 11px;
+    }
+
+    .myform {
+        width: 230px;
+    }
+
+    .myform input {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    legend {
+        font-size: 15px;
+        font-weight: 770;
+        padding: 2px 5px;
+        margin: 1px 6px;
+    }
+
+    .myform label,
+    select,
+    option {
+        font-size: 12px;
+    }
+
+    #submit {
+        width: 50px;
+        height: 20px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
